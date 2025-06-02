@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: personal_task_manager
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: |
+      python manage.py migrate &&
+      python manage.py collectstatic --noinput &&
+      gunicorn task_manager.wsgi
