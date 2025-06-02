@@ -1,0 +1,147 @@
+/* Custom styles for Personal Task Manager */
+
+body {
+    background-color: #f8f9fa;
+}
+
+.navbar-brand {
+    font-weight: bold;
+}
+
+.task-card {
+    transition: all 0.3s ease;
+    border-left: 4px solid #007bff;
+}
+
+.task-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.completed-task {
+    border-left-color: #28a745;
+    background-color: #f8f9fa;
+}
+
+.completed-task .card-title {
+    text-decoration: line-through;
+    color: #6c757d;
+}
+
+.task-checkbox {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.btn-group .btn {
+    margin-right: 2px;
+}
+
+.card-header {
+    background-color: #007bff;
+    color: white;
+    border-bottom: none;
+}
+
+.card-header h3, .card-header h5 {
+    margin: 0;
+}
+
+.blockquote {
+    font-style: italic;
+    border-left: 4px solid #007bff;
+    padding-left: 1rem;
+}
+
+.alert {
+    border: none;
+    border-radius: 8px;
+}
+
+.btn {
+    border-radius: 6px;
+    transition: all 0.2s ease;
+}
+
+.btn:hover {
+    transform: translateY(-1px);
+}
+
+.form-control {
+    border-radius: 6px;
+    border: 1px solid #ced4da;
+}
+
+.form-control:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.badge {
+    font-size: 0.75em;
+    padding: 0.5em 0.75em;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .task-card .row {
+        text-align: center;
+    }
+
+    .task-card .col-md-1,
+    .task-card .col-md-2 {
+        margin-bottom: 10px;
+    }
+
+    .btn-group {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+/* Loading animation for AJAX requests */
+.loading {
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+/* Custom checkbox styling */
+.form-check-input:checked {
+    background-color: #28a745;
+    border-color: #28a745;
+}
+
+/* Quote card styling */
+.card .blockquote {
+    margin-bottom: 0;
+}
+
+/* Statistics styling */
+.card-body .row.text-center h3 {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/* Form styling improvements */
+.form-label {
+    font-weight: 600;
+    color: #495057;
+}
+
+/* Navigation improvements */
+.navbar-nav .nav-link {
+    transition: color 0.2s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #fff !important;
+}
+
+/* Card hover effects */
+.card {
+    transition: box-shadow 0.3s ease;
+}
+
+.card:hover {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
