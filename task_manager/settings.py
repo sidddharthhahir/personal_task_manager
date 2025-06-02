@@ -4,11 +4,13 @@ from pathlib import Path
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', 'fallback-secret-key')
-
 DEBUG = False  # Set to False for production
 
-ALLOWED_HOSTS = ['.pythonanywhere.com', 'localhost', '127.0.0.1']
-
+ALLOWED_HOSTS = [
+    'sidddharthahir.pythonanywhere.com',
+    'localhost',
+    '127.0.0.1'
+]
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
