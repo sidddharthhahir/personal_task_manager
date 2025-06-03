@@ -6,7 +6,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', 'fallback-secret-key')
 DEBUG = False  # Set to False for production
 
-ALLOWED_HOSTS = ['personal-task-manager-wdl7.onrender.com', 'localhost', '127.0.0.1']INSTALLED_APPS = [
+ALLOWED_HOSTS = ['personal-task-manager-wdl7.onrender.com', 'localhost', '127.0.0.1']
+
+INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
